@@ -1,0 +1,276 @@
+{
+  "imagelite": true,
+  "slider": true,
+  "selectorButtons": true,
+  "zoomInUrl": {
+    "3uurs": "/nederland/neerslag/zoom/3uurs",
+    "actueel": "/nederland/neerslag/zoom/actueel"
+  },
+  "legend": "precipitation",
+  "overlays": [
+    {
+      "name": "MyLocations"
+    }
+  ],
+  "animator": "sprite",
+  "preload": {
+    "8uurs": "RadarMapRain15mNL?history=0&forecast=32&skip=0",
+    "48uurs": "radarMapRain1hNL?history=0&forecast=24&skip=0&startIndex=24",
+    "24uurs": "radarMapRain1hNL?history=0&forecast=24&skip=0&startIndex=0",
+    "3uurs": "radarMapRain5mNL?history=4&forecast=36",
+    "actueel": "radarMapRain5mNL?history=12&skip=0"
+  },
+  "buttons": [
+    {
+      "name": "Afgelopen uur",
+      "shortname": "-1 uur",
+      "id": "actueel",
+      "settings": {
+        "graphPeriod": "actueel",
+        "type": "RadarMapRainNL",
+        "legend": "precipitation",
+        "zoomInUrl": "/nederland/neerslag/zoom/actueel",
+        "animator": "single",
+        "background": "MapWebmercatorNL?size=Full",
+        "opacity": 0.8,
+        "overlays": [
+          {
+            "name": "MyLocations"
+          }
+        ]
+      }
+    },
+    {
+      "name": "+3 uur",
+      "shortname": "+3 uur",
+      "id": "3uurs",
+      "settings": {
+        "graphPeriod": "3uurs",
+        "type": "RadarMapRainNL",
+        "legend": "precipitation",
+        "zoomInUrl": "/nederland/neerslag/zoom/3uurs",
+        "animator": "single",
+        "background": "MapWebmercatorNL?size=Full",
+        "opacity": 0.8,
+        "overlays": [
+          {
+            "name": "MyLocations"
+          }
+        ]
+      }
+    },
+    {
+      "name": "+8 uur",
+      "shortname": "+8 uur",
+      "id": "8uurs",
+      "settings": {
+        "graphPeriod": "8uurs",
+        "type": "RadarMapRainNLEighthour",
+        "legend": "precipitation",
+        "animator": "single",
+        "background": "MapWebmercatorNL?size=Full",
+        "opacity": 0.8,
+        "overlays": [
+          {
+            "name": "MyLocations"
+          }
+        ]
+      }
+    },
+    {
+      "name": "+24 uur",
+      "shortname": "+24 uur",
+      "id": "24uurs",
+      "settings": {
+        "graphPeriod": "24uurs",
+        "type": "RadarMapRain24HourForecastNL",
+        "legend": "precipitation-wetsnow-snow",
+        "showDayAndTime": true,
+        "animator": "single",
+        "background": "MapWebmercatorNL?size=Full",
+        "opacity": 0.8,
+        "overlays": [
+          {
+            "name": "MyLocations",
+            "settings": {
+              "disableZoom": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "+48 uur",
+      "shortname": "+48 uur",
+      "id": "48uurs",
+      "settings": {
+        "graphPeriod": "48uurs",
+        "type": "RadarMapRain24HourForecastNL",
+        "legend": "precipitation-wetsnow-snow",
+        "showDayAndTime": true,
+        "animator": "single",
+        "background": "MapWebmercatorNL?size=Full",
+        "opacity": 0.8,
+        "overlays": [
+          {
+            "name": "MyLocations",
+            "settings": {
+              "disableZoom": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "activeType": "8uurs",
+  "preloadError": false,
+  "preloadedJson": {
+    "imagetype": "RadarMapRain15mNL",
+    "timeOffset": 1,
+    "ext": "png",
+    "width": 1058,
+    "height": 915,
+    "timestamp": "2022-12-18T22:45:00",
+    "still": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212182300.png",
+    "stilltimestamp": "2022-12-18T23:00:00",
+    "times": [
+      {
+        "timestamp": "2022-12-18T23:00:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212182300.png"
+      },
+      {
+        "timestamp": "2022-12-18T23:15:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212182315.png"
+      },
+      {
+        "timestamp": "2022-12-18T23:30:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212182330.png"
+      },
+      {
+        "timestamp": "2022-12-18T23:45:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212182345.png"
+      },
+      {
+        "timestamp": "2022-12-19T00:00:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190000.png"
+      },
+      {
+        "timestamp": "2022-12-19T00:15:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190015.png"
+      },
+      {
+        "timestamp": "2022-12-19T00:30:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190030.png"
+      },
+      {
+        "timestamp": "2022-12-19T00:45:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190045.png"
+      },
+      {
+        "timestamp": "2022-12-19T01:00:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190100.png"
+      },
+      {
+        "timestamp": "2022-12-19T01:15:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190115.png"
+      },
+      {
+        "timestamp": "2022-12-19T01:30:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190130.png"
+      },
+      {
+        "timestamp": "2022-12-19T01:45:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190145.png"
+      },
+      {
+        "timestamp": "2022-12-19T02:00:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190200.png"
+      },
+      {
+        "timestamp": "2022-12-19T02:15:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190215.png"
+      },
+      {
+        "timestamp": "2022-12-19T02:30:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190230.png"
+      },
+      {
+        "timestamp": "2022-12-19T02:45:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190245.png"
+      },
+      {
+        "timestamp": "2022-12-19T03:00:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190300.png"
+      },
+      {
+        "timestamp": "2022-12-19T03:15:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190315.png"
+      },
+      {
+        "timestamp": "2022-12-19T03:30:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190330.png"
+      },
+      {
+        "timestamp": "2022-12-19T03:45:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190345.png"
+      },
+      {
+        "timestamp": "2022-12-19T04:00:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190400.png"
+      },
+      {
+        "timestamp": "2022-12-19T04:15:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190415.png"
+      },
+      {
+        "timestamp": "2022-12-19T04:30:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190430.png"
+      },
+      {
+        "timestamp": "2022-12-19T04:45:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190445.png"
+      },
+      {
+        "timestamp": "2022-12-19T05:00:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190500.png"
+      },
+      {
+        "timestamp": "2022-12-19T05:15:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190515.png"
+      },
+      {
+        "timestamp": "2022-12-19T05:30:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190530.png"
+      },
+      {
+        "timestamp": "2022-12-19T05:45:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190545.png"
+      },
+      {
+        "timestamp": "2022-12-19T06:00:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190600.png"
+      },
+      {
+        "timestamp": "2022-12-19T06:15:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190615.png"
+      },
+      {
+        "timestamp": "2022-12-19T06:30:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190630.png"
+      },
+      {
+        "timestamp": "2022-12-19T06:45:00",
+        "url": "https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212190645.png"
+      }
+    ]
+  },
+  "preloadedId": "8uurs",
+  "legendList": [
+    "precipitation",
+    "precipitation-wetsnow-snow"
+  ],
+  "initSettings": {
+    "mapStyles": "background-image:url('https://processing-cdn.buienradar.nl/processing/nl/raineighthour/forecast/runs/webm/202212182245/202212182300.png');padding-top:86.48393194706995%;",
+    "time": "00:00"
+  }
+}

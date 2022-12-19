@@ -1,0 +1,157 @@
+{
+  "homepageparams": true,
+  "slider": true,
+  "selectorButtons": true,
+  "zoomInUrl": {
+    "RadarMapRainNL": "/nederland/neerslag/zoom/actueel"
+  },
+  "zoomOutUrl": {
+    "RadarMapRainNL": "/wereldwijd/europa/buienradar"
+  },
+  "legend": "precipitation",
+  "overlays": [
+    {
+      "name": "MyLocations",
+      "settings": {
+        "type": "leaflet"
+      }
+    }
+  ],
+  "animator": "sprite",
+  "preload": "RadarMapRainWebmercatorNL?height=475&width=550&extension=png&renderBackground=True&renderBranding=False&renderText=False&history=0&forecast=12&skip=0",
+  "buttons": [
+    {
+      "name": "Buienradar",
+      "shortname": "Buienradar",
+      "preload": "RadarMapRainWebmercatorNL?height=475&width=550&extension=png&renderBackground=True&renderBranding=False&renderText=False&history=0&forecast=12&skip=0",
+      "settings": {
+        "type": "RadarMapRainNL",
+        "zoomInUrl": "/nederland/neerslag/zoom/actueel",
+        "zoomOutUrl": "/wereldwijd/europa/buienradar",
+        "legend": "precipitation",
+        "animator": "sprite",
+        "overlays": [
+          {
+            "name": "MyLocations"
+          }
+        ]
+      },
+      "id": "RadarMapRainNL"
+    },
+    {
+      "name": "Sneeuw",
+      "shortname": "Sneeuw",
+      "id": "sneeuw",
+      "settings": {
+        "type": "RadarMapSnowNL",
+        "legend": "precipitation-wetsnow-snow",
+        "overlays": [
+          {
+            "name": "MyLocations"
+          }
+        ]
+      },
+      "preload": "RadarMapSnowNL?height=512&width=550&extension=png&renderBackground=True&renderBranding=False&renderText=False&history=0&forecast=12&skip=0",
+      "preloadMobile": "RadarMapSnowNL?height=512&width=550&extension=png&renderBackground=True&renderBranding=False&renderText=False&history=0&forecast=12&skip=0"
+    },
+    {
+      "name": "Satelliet",
+      "shortname": "Satelliet",
+      "id": "satelliet",
+      "settings": {
+        "type": "SatVisual"
+      },
+      "preload": "SatVisual?height=512&width=550&extension=png,jpg&renderBackground=True&renderBranding=False&renderText=False&history=8&forecast=0&skip=0&subType=nl",
+      "preloadMobile": "SatVisual?height=512&width=550&extension=png,jpg&renderBackground=True&renderBranding=False&renderText=False&history=8&forecast=0&skip=0&subType=nl"
+    },
+    {
+      "name": "Temperatuur",
+      "shortname": "Temp.",
+      "id": "temperatuur",
+      "settings": {
+        "type": "WeatherMapTemperatureActualNL",
+        "legend": "weathermap-temperature",
+        "overlays": [
+          {
+            "name": "MyLocations"
+          }
+        ]
+      },
+      "preload": "WeatherMapTemperatureActualNL?height=988&width=820&extension=png&renderBackground=False&renderBranding=False&renderText=False&history=12&forecast=0&skip=0",
+      "preloadMobile": "WeatherMapTemperatureActualNL?height=988&width=820&extension=png&renderBackground=False&renderBranding=False&renderText=False&history=12&forecast=0&skip=0"
+    }
+  ],
+  "activeType": "RadarMapRainNL",
+  "preloadError": false,
+  "preloadedJson": {
+    "imagetype": "RadarMapRainWebmercatorNL",
+    "timeOffset": 1,
+    "ext": "png",
+    "width": 550,
+    "height": 475,
+    "timestamp": "2022-12-18T23:15:00",
+    "still": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212182315",
+    "stilltimestamp": "2022-12-18T23:15:00",
+    "sprite": "https://image.buienradar.nl/2.0/image/sprite/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&history=0&forecast=12&skip=0&timestamp=202212182315&runTimestamp=202212182300",
+    "times": [
+      {
+        "timestamp": "2022-12-18T23:15:00",
+        "url": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212182315"
+      },
+      {
+        "timestamp": "2022-12-18T23:20:00",
+        "url": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212182320"
+      },
+      {
+        "timestamp": "2022-12-18T23:25:00",
+        "url": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212182325"
+      },
+      {
+        "timestamp": "2022-12-18T23:30:00",
+        "url": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212182330"
+      },
+      {
+        "timestamp": "2022-12-18T23:35:00",
+        "url": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212182335"
+      },
+      {
+        "timestamp": "2022-12-18T23:40:00",
+        "url": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212182340"
+      },
+      {
+        "timestamp": "2022-12-18T23:45:00",
+        "url": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212182345"
+      },
+      {
+        "timestamp": "2022-12-18T23:50:00",
+        "url": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212182350"
+      },
+      {
+        "timestamp": "2022-12-18T23:55:00",
+        "url": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212182355"
+      },
+      {
+        "timestamp": "2022-12-19T00:00:00",
+        "url": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212190000"
+      },
+      {
+        "timestamp": "2022-12-19T00:05:00",
+        "url": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212190005"
+      },
+      {
+        "timestamp": "2022-12-19T00:10:00",
+        "url": "https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212190010"
+      }
+    ]
+  },
+  "preloadedId": "RadarMapRainNL",
+  "legendList": [
+    "precipitation",
+    "precipitation-wetsnow-snow",
+    "weathermap-temperature"
+  ],
+  "initSettings": {
+    "mapStyles": "background-image:url('https://image.buienradar.nl/2.0/image/single/RadarMapRainWebmercatorNL?extension=png&width=550&height=475&renderText=False&renderBranding=False&renderBackground=True&runTimestamp=202212182300&timestamp=202212182315');padding-top:86.36363636363636%;",
+    "time": "00:15"
+  }
+}
