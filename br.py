@@ -49,3 +49,6 @@ loadProps(neerslag8uursUrl)
 # (?) https://image.buienradar.nl/2.0/image/single/SatVisual?height=512&width=550&extension=png,jpg&renderBackground=True&renderBranding=False&renderText=False&history=8&forecast=0&skip=0&subType=nl
 #  https://image.buienradar.nl/2.0/image/single/SatVisual?extension=png&width=550&height=512&renderText=False&renderBranding=False&renderBackground=False&subType=nl&timestamp=202212171745
 #  https://image.buienradar.nl/2.0/image/single/WeatherMapTemperatureActualNL?height=988&width=820&extension=png&renderBackground=False&renderBranding=False&renderText=False&history=12&forecast=0&skip=0
+
+#  BG image for set B:
+#  https://image-lite.buienradar.nl/3.0/background/MapWebmercatorNL?size=Full&ak=3c4a3037-85e6-4d1e-ad6c-f3f6e4b75f2f
